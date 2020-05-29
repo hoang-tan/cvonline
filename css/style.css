@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    }
+    
+    .btn-primary:hover{
+        background-color: var(--dark-color);
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    /* root là thẻ html */
+    :root{
+        --primary-color : #F7452E;
+        --primary-dark-color : #c53724;
+        --primary-light-color : #f86a57;
+        --dark-color : #222;
+        --light-color : #fff;
+    }
+
+    #navbar{
+        background-color: var(--primary-color);
+    
+    }
+    
+    .menu-level-1{
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .item-level-1{
+        padding: 16px 20px;
+    }
+    
+    .item-level-1 a,i{
+        color: var(--light-color);
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .item-level-1:hover{
+        background-color: var(--primary-dark-color);
+    }
+    
+    .item-level-1:hover .menu-level-2{
+        display: block;
+    }
+    
+    /* :last-child là chọn thành phần cuối cùng */
+    /* .item-level-1:last-child{
+        margin-left: auto;
+    } */
+    
+    .menu-level-2{
+        border: 1px solid #ddd;
+        box-shadow: 1px 1px 2px #ddd;
+        position: absolute;
+        /* tổng chiều cao để top xg 52 là => chiều cao dòng 20 + pading trên dưới 16+16 =52 */
+        top: 52px;
+        display: none;
+        background-color: var(--light-color)    ;
+    }
+    
+    .menu-level-2 a{
+        color: var(--dark-color);
+    }
+    
+    .menu-level-2 .item-level-2{
+        padding: 10px 20px;
+    }
+    
+    .menu-level-2 .item-level-2:hover{
+        text-decoration: underline;
+    }
+
+.abut h1{
+    text-align: center;
+    background-color: var(--primary-light-color);
+    padding: 16px 20px;
+}
+
+.col-md-5 img{
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+/* .info{
+    background-color: #FAFAFA;
+} */
+
+body{
+    background-color: #FAFAFA;
+}
+
+
+.col-md-4{
+    background-color: #FAFAFA;
+    margin-left: 10px
+}
+
+.col-md-3{
+    background-color: #FAFAFA;
+    margin-left: 20px
+}
